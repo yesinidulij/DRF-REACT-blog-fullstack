@@ -15,15 +15,15 @@ const routing = (
 		<React.StrictMode>
 			<Header />
 			<Routes>
-				<Route exact path="/" component={App} />
-				<Route path="/register" component={Register} />
-				<Route path="/login" component={Login} />
-				<Route path="/logout" component={Logout} />
+				<Route exact path="/" element={<App/>} />
+				<Route path="/register" element={<Register/>} />
+				<Route path="/login" element={<Login/>} />
+				<Route path="/logout" element={<Logout/>} />
 			</Routes>
 			<Footer />
 		</React.StrictMode>
 	</Router>
-)
+);
 
 ReactDOM.render(routing, document.getElementById('root'));
 
